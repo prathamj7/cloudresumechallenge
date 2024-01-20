@@ -1,0 +1,1 @@
+#this is the code for lambda function written using boto3 library
