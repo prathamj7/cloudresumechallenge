@@ -1,0 +1,104 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #9e9d9d;
+}
+
+header {
+    background-color: #272a2f;
+    color: #f7c530;
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    margin: 0;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+#about-me {
+    background-color: #f8f6f3;
+}
+
+#about-me p {
+    line-height: 1.6;
+}
+
+.education, .experience {
+    background-color: #fffefc;
+    margin-bottom: 30px;
+}
+
+.education h3, .experience h3 {
+    border-bottom: 2px solid #faf7f7;
+    padding-bottom: 5px;
+}
+
+.education p, .experience p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.counter-container p{
+    margin: auto;
+    text-shadow: #272a2f;
+    font-style: italic;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes slide{
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%) ;
+    }
+}
+
+.dynamic-object {
+    text-align: center;
+    padding: 60px 0;
+    overflow: hidden;
+    background-color: white;
+    white-space: nowrap;
+}
+
+.dynamic-object:hover .image-slider{
+    animation-play-state: paused;
+}
+
+.image-slider {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+}
+
+.image-slider img{
+    height: 80px;
+    margin: 0px 40px;
+    margin-top: 50px;
+}
+
