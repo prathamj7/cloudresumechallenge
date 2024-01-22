@@ -1,1 +1,1 @@
-This is the architecture behing the Cloud Resume Challenge
+This is the architecture behind the Cloud Resume Challenge
