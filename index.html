@@ -3,65 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prathamesh Joshi - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <title>MyCoolResume</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-
-    <header>
-        <h1>Prathamesh Joshi</h1>
-        <p>Devops Enthusiast</p>
-    </header>
-
-
-    <section id="about-me">
-        <h2>Hey there!</h2>
-        <p>This is my attempt at Cloud Resume Challenge. If you are able to see this resume, I just might have passed the challenge!</p>
-        <p>I am glad I took up this challenge and I completed it!</p>
-    </section>
-
-    <section class="education">
-        <h2>Education</h2>
-        <p>Okay if you're really curious I have a Mechanical background and I graduated from Govt. Engg College of Aurangabad.</p>
-    </section>
-
-    <section class="experience">
-        <h2>Work Experience</h2>
-        <h3>Tata Consultancy Services Pvt Ltd</h3>
-        <p>Scroll down to know more!</p>
-    </section>
-
-
-    <section class="dynamic-object">
-        <h2>Technologies I've worked with</h2>
-        <div class="image-slider">
-            <img src="linux-tux.svg">
-            <img src="amazon-web-services-2.svg">
-            <img src="kubernets.svg">
-            <img src="docker-4.svg">
-            <img src="ansible.svg">
-        </div>
-        <div class="image-slider">
-            <img src="linux-tux.svg">
-            <img src="amazon-web-services-2.svg">
-            <img src="kubernets.svg">
-            <img src="docker-4.svg">
-            <img src="ansible.svg">
+  <header>
+    <div class="container">
+    <nav class="flex items-center justify-between">
+      <div class="left flex items-center">
+        <div>
+          <a href="#about">About</a>
+          <a href="#services">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
         </div>
 
+      </div>
+      <div class="right">
+        <button class="btn btn-primary">
+          <a href="#contact">Contact</a></button>
+      </div>
+    </nav>
+  </header>
+  
+  <!---hero-->
 
+  <section class="hero" id="home">
+    <!---<img src="IMG-20230320-WA0018-removebg-preview.png" alt="" width=auto height=auto > --->
+     <div class="main-content">
+      <div class="row flex">
+      <div class="col-md-6">
+      <h4>Hi there!</h4>
+      <h1>I'm <span>Prathamesh Joshi</span></h1>
+        <p>I am AWS Certified IT professional with 2 years of experience in the industry. I have worked around DevOps tools and technlogies with various projects. I wish to make the best use of my knowledge to contribute into making smooth, automated and optimized products.</p>
+       <div class="right">
+         <button class="btn btn-primary">Download CV</button>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="branding">
+        <img src="/cloudresumechallenge/assets/aws.png" alt="" width="100" height="100">
+      </div>
+    </div>
+    </div>
+    </div>
+    
+
+    
+  </section>
+
+
+    <!---about me-->
+    <section class="about" id="about">
+     
+      <div class="about-img flex-1"><img src="IMG-20230320-WA0018-removebg-preview.png"></div>
+    
+      <div class="exp-area items-center justify-between flex-1">
+        <h2>I am a <span> DevOps and Cloud Enthusiast</span></h2>
+        <p class="exp">Experience: <span>2 Years</span></p>
+        <p class="exp">Profile: <span>Infrastructure and Deployment Engineer </span></p>
+        <p class="exp">Organization: <span>Tata Consultancy Services</span></p>
+        <p class="exp">E-mail: <span>prathamsj7@gmail.com</span></p>
+        <p class="exp">Contact No: <span>+918421123018</span></p>
+      </div>
+      </div>
+    
+    </section>
+
+  <!---services-->
+  <section class="services" id="services">
+    <div class="center-text">
+      <h2> My Personal <span> Projects</span></h2>
+    </div>
+    <div class="services-content">
+      <div class="box">
+        <img src="assets/amazon-web-services-2.svg" alt="" width="50" height="50">
+        <h3>The Cloud Resume Challenge</h3>
+        <p>A resume built with HTML and CSS, on AWS Cloud using multiple services such as DynamoDB, Lambda, Route53, Cloudfront, IAM, Certificate Manager on a custom domain name.</p>
+        <a href="#"> Know more <i class="ri-arrow-right-line"></i></a>
+      </div>
+      <div class="box">
+        <img src="/cloudresumechallenge/assets/aws.png" alt="" width="50" height="50">
+        <h3>Serverless QnA Webapp</h3>
+        <p>AWS Lambda function, writtten in Python, that talks to AWS DynamoDB and fetches random MCQs stored in the database and made accessible through REST API with help of AWS API Gateway</p>
+        <a href="#"> Know more <i class="ri-arrow-right-line"></i></a>
+      </div>
+      <div class="box">
+        <img src="/cloudresumechallenge/assets/aws.png" alt="" width="50" height="50">
+        <h3>NGINX Webapp with Docker on AWS EC2</h3>
+        <p>A Django To-Do-Notes Application deployed on an AWS EC2 instance by creating a Dockerfile. The Website is made accessible via Proxy Pass through Nginx  </p>
         
-    </section>
+        <a href="#"> Know more <i class="ri-arrow-right-line"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!---skills-->
+
+  <section class="skills" id="skills">
+    <div class="center-text">
+      <h2>Tech <span>Stack</span></h2>
+    </div>
+    <div class="skill-list">
+      <div class="skills-slide">
+        <img src="/demoresume/assets/linux-svgrepo-com.svg"/>
+        <img src="/demoresume/assets/amazon-web-services-2.svg"/>
+        <img src="/demoresume/assets/docker-4.svg" />
+        <img src="/demoresume/assets/kubernets.svg" />
+        <img src="/demoresume/assets/ansible.svg" />
+        <img src="/demoresume/assets/nginx-svgrepo-com.svg" />
+        <img src="aws.png" />
+      </div>
+      <div class="skills-slide">
+        <img src="/demoresume/assets/linux-svgrepo-com.svg" />
+        <img src="/demoresume/assets/amazon-web-services-2.svg" />
+        <img src="/demoresume/assets/docker-4.svg" />
+        <img src="/demoresume/assets/kubernets.svg" />
+        <img src="/demoresume/assets/ansible.svg" />
+        <img src="/demoresume/assets/nginx-svgrepo-com.svg" />
+        <img src="aws.png" />
+      </div>
+    </div>
+  </section>
+
+  <!---contact-->
+  <section class="contact" id="contact">
+    <div class="contact-form">
+      <h2> Get <span>in touch!</span></h2>
+      <form action="">
+        <div class="input-box">
+          <input type="text" class="input"  required>
+          <label for=""> Name </label>
+        </div>
+        <div class="input-box">
+          <input type="email" class="input" required>
+          <label for=""> Email </label>
+        </div>
+        <div class="input-box">
+          <input type="tel" class="input" required>
+          <label for=""> Phone </label>
+        </div>
+        <div class="input-box">
+          <textarea name=""></textarea>
+          <label for=""> Message </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Send  <i class='bx bxs-paper-plane'></i></button>
+      </form>
 
     <div class = "counter-container">
-        <p class=" counter-number">Total Views:</p>
-
+      <p class=" counter-number">Total Views:</p>
+    </div>
+    <script src="./index.js"></script>
+    
+    </div>
+ 
+  </section>
 
     </div>
+  </div>
 
-    <script src="./index.js"></script>
-
-
+ 
 
 </body>
+
 </html>

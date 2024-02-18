@@ -1,0 +1,41 @@
+.flex{
+    display: flex;
+}
+.flex-1{
+    flex: 1;
+}
+.items-center{
+    align-items: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.btn{
+    padding: 0.6rem 2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--light);
+    border: 2px solid var(--light);
+    background: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+
+}
+
+.btn-primary{
+    border-color: var(--grey);
+}
+
+.btn-primary:hover{
+    background-color: var(--primary);
+    color: var(--dark);
+    box-shadow: 0 0 20px var(--primary);
+
+}
+
